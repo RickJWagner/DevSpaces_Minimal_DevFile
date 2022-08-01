@@ -1,13 +1,5 @@
-schemaVersion: 2.1.0
-metadata:
+--- 
+metadata: 
   name: java-gradle
   namespace: rhn-support-rick-dev
-commands:
-  - exec:
-      commandLine: gradle build
-      component: tools
-      group:
-        kind: build
-      label: Build
-      workingDir: '${PROJECTS_ROOT}/gs-validating-form-input/complete'
-    id: 1-build
+schemaVersion: "2.1.0"
