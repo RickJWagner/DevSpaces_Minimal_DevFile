@@ -2,7 +2,3 @@ apiVersion: 2.1.0
 metadata:
   generateName: java-min-
 starterProjects:
-  - name: "kafka-project"
-    description: "Use this app to get a nodejs application for working with kafka"
-  - name: "simple-project"
-    description: "Use this app to get a simple "hello world" nodejs application"
