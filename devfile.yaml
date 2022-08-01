@@ -2,7 +2,7 @@ schemaVersion: 2.1.0
 metadata:
   name: minimal-devfile
 projects:
-  - name: min-df-project
+  - name: gradle-simple
     source:
       type: git
-      location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'  
+      location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
