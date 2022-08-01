@@ -6,31 +6,3 @@ projects:
     source:
       type: git
       location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
-components:
-  - type: chePlugin
-    id: redhat/java/latest
-    preferences:
-      java.server.launchMode: Standard
-    registryUrl: 'https://eclipse-che.github.io/che-plugin-registry/7.42.0/v3/'
-  - type: dockerimage
-    alias: gradle
-    image: 'quay.io/eclipse/che-java11-gradle:ce0526f'
-    env:
-      - name: GRADLE_USER_HOME
-        value: /home/gradle/.gradle
-      - name: JAVA_OPTS
-        value: '-XX:MaxRAMPercentage=50 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xms20m -Djava.security.egd=file:/dev/./urandom'
-      - name: JAVA_TOOL_OPTIONS
-        value: '-XX:MaxRAMPercentage=50 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xms20m -Djava.security.egd=file:/dev/./urandom'
-      - name: HOME
-        value: /home/gradle
-    memoryLimit: 512Mi
-    volumes:
-      - name: gradle
-        containerPath: /home/gradle/.gradle
-    mountSources: true
-    endpoints:
-      - attributes:
-          public: 'false'
-        name: debug
-        port: 5005
