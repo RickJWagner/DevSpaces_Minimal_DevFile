@@ -6,3 +6,4 @@ projects:
     source:
       type: git
       location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
+commands:
