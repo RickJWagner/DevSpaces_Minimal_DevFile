@@ -3,3 +3,5 @@ metadata:
   name: minimal-devfile
 projects:
   - name: min-df-project
+    git:
+      location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'  
