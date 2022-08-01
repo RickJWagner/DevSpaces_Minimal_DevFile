@@ -1,9 +1,9 @@
 schemaVersion: 2.1.0
 metadata:
-  name: minimal-devfile
+  name: java-gradle
+  namespace: rhn-support-rick-dev
 projects:
-  - name: gradle-simple
-    source:
-      type: git
+  - name: gs-validating-form-input
+    zip:
       location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
 commands:
