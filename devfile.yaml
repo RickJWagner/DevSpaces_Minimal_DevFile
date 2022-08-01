@@ -1,8 +1,8 @@
 apiVersion: 2.1.0
 metadata:
   generateName: java-min-
-projects:
-  - name: min-simple
-    source:
-      type: git
-      location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
+starterProjects:
+  - name: "kafka-project"
+    description: "Use this app to get a nodejs application for working with kafka"
+  - name: "simple-project"
+    description: "Use this app to get a simple "hello world" nodejs application"
