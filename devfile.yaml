@@ -34,16 +34,3 @@ components:
           public: 'false'
         name: debug
         port: 5005
-commands:
-  - name: gradle build
-    actions:
-      - type: exec
-        component: gradle
-        command: gradle build
-        workdir: '${CHE_PROJECTS_ROOT}/gradle-simple'
-  - name: gradle tasks all
-    actions:
-      - type: exec
-        component: gradle
-        command: gradle tasks --all
-        workdir: '${CHE_PROJECTS_ROOT}/gradle-simple'
