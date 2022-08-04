@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: spring-boot-http-booster
+  name:spring-boot-http-booster
 components:
   - name: tools
     container:
