@@ -1,8 +1,17 @@
-apiVersion: 1.0.0
+schemaVersion: 2.1.0
 metadata:
-  generateName: java-min-
-projects:
-  - name: min-simple
-    source:
-      type: git
-      location: 'https://github.com/RickJWagner/DevSpaces_Minimal_DevFile'
+  name: min-devfile
+components:
+  - name: tools
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8:3.0
+      env:
+        - name: USE_JAVA8
+          value: "true"
+      memoryLimit: 3Gi
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
+  - name: m2
+    volume:
+      size: 1G
